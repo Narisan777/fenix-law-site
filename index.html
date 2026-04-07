@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenix Law — Юридическая архитектура для стартапов и технологических компаний</title>
+    <meta name="description" content="Fenix Law — бутиковая юридическая практика. Помогаю стартапам и технологическим компаниям выстроить юридическую архитектуру: доли, продукт, команда, данные, сделки, масштабирование.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts: загружается асинхронно после рендера (см. скрипт в конце body) -->
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo">
+                <img src="img/logo-light.png" alt="Fenix Law" class="header__logo-img">
+            </a>
+            <nav class="header__nav" id="nav">
+                <a href="#about" class="header__link">О практике</a>
+                <a href="#services" class="header__link">Компетенции</a>
+                <a href="#session" class="header__link">Стратегическая сессия</a>
+                <a href="#cases" class="header__link">Кейсы</a>
+                <a href="#faq" class="header__link">Вопросы</a>
+                <a href="https://t.me/Fenixlaw" class="header__link header__link--cta" target="_blank" rel="noopener">Обсудить проект</a>
+            </nav>
+            <button class="header__burger" id="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg-grid"></div>
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge fade-in">Бутиковая юридическая практика</div>
+                <h1 class="hero__title fade-in">
+                    Юридическая архитектура<br>
+                    <span class="hero__title-accent">для стартапов и технологических компаний</span>
+                </h1>
+                <p class="hero__subtitle fade-in">
+                    Помогаю собрать бизнес так, чтобы он мог расти, привлекать инвестиции
+                    и не ломаться на непрочном фундаменте. Не просто документы — а юридическая
+                    конструкция, которая выдерживает рост.
+                </p>
+                <div class="hero__tags fade-in">
+                    <span class="hero__tag">Основатели и доли</span>
+                    <span class="hero__tag">Права на продукт</span>
+                    <span class="hero__tag">Команда и договоры</span>
+                    <span class="hero__tag">Данные и конфиденциальность</span>
+                    <span class="hero__tag">Новые юрисдикции</span>
+                </div>
+                <div class="hero__actions fade-in">
+                    <a href="#contact" class="btn btn--primary">Записаться на стратегическую сессию</a>
+                    <a href="https://t.me/Fenixlaw" class="btn btn--outline" target="_blank" rel="noopener">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-hint">
+            <span>Узнать больше</span>
+            <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+                <path d="M8 0v20m0 0l6-6m-6 6l-6-6" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==================== FOR WHOM ==================== -->
+    <section class="for-whom section" id="about">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Для кого</span>
+                <h2 class="section__title">Я работаю там, где право<br>влияет на рост бизнеса</h2>
+            </div>
+            <div class="for-whom__grid">
+                <div class="for-whom__card fade-in">
+                    <div class="for-whom__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L2 9l14 7 14-7-14-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M2 23l14 7 14-7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M2 16l14 7 14-7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="for-whom__card-title">Для стартапов</h3>
+                    <p class="for-whom__card-desc">Фаундеры, сооснователи, команды на ранней стадии — перед запуском или перед инвестором</p>
+                    <ul class="for-whom__card-list">
+                        <li>Запуск и структурирование</li>
+                        <li>Сооснователи и распределение долей</li>
+                        <li>Готовность к инвестициям</li>
+                        <li>Права на продукт и разработки</li>
+                        <li>Астана Хаб / МФЦА</li>
+                    </ul>
+                </div>
+                <div class="for-whom__card fade-in">
+                    <div class="for-whom__card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="3" y="3" width="26" height="26" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 16h12M16 10v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="for-whom__card-title">Для технологических компаний</h3>
+                    <p class="for-whom__card-desc">Действующие цифровые и технологические компании, платформы, маркетплейсы, финтех, продукты на базе данных и ИИ</p>
+                    <ul class="for-whom__card-list">
+                        <li>Интеллектуальная собственность и владение</li>
+                        <li>Команда и подрядчики</li>
+                        <li>Данные и приватность</li>
+                        <li>Сделки и структура</li>
+                        <li>Новые рынки и юрисдикции</li>
+                        <li>Юридический аудит точек роста</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section section--dark" id="services">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Компетенции</span>
+                <h2 class="section__title">Что именно я делаю</h2>
+                <p class="section__desc">Я помогаю собрать юридическую архитектуру проекта или компании — от базовой конструкции до сложных сделок</p>
+            </div>
+            <div class="services__grid">
+                <div class="services__card fade-in">
+                    <span class="services__card-num">01</span>
+                    <h3 class="services__card-title">Основатели и доли</h3>
+                    <p class="services__card-desc">Соглашения между сооснователями, распределение долей, вестинг, правила выхода. Структура, которая не развалится при первом конфликте.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <span class="services__card-num">02</span>
+                    <h3 class="services__card-title">Интеллектуальная собственность</h3>
+                    <p class="services__card-desc">Права на продукт, код, дизайн, контент. Передача прав от разработчиков, защита ключевых активов компании.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <span class="services__card-num">03</span>
+                    <h3 class="services__card-title">Команда и подрядчики</h3>
+                    <p class="services__card-desc">Договоры с сотрудниками, фрилансерами, эдвайзерами. Конфиденциальность, неконкуренция, передача результатов работы.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <span class="services__card-num">04</span>
+                    <h3 class="services__card-title">Данные и приватность</h3>
+                    <p class="services__card-desc">Политики обработки данных, пользовательские соглашения, согласия. Соответствие требованиям по защите персональных данных.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <span class="services__card-num">05</span>
+                    <h3 class="services__card-title">Сделки и инвестиции</h3>
+                    <p class="services__card-desc">Структурирование раундов, конвертируемые инструменты, инвестиционные соглашения. Подготовка к привлечению капитала.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <span class="services__card-num">06</span>
+                    <h3 class="services__card-title">Структура и юрисдикции</h3>
+                    <p class="services__card-desc">Корпоративная архитектура, Астана Хаб, МФЦА, ОАЭ, трансграничные контуры. Выбор оптимальной юрисдикции под задачу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STRATEGIC SESSION ==================== -->
+    <section class="session section" id="session">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Главный продукт</span>
+                <h2 class="section__title">Юридическая консультация<br>в формате стратегической сессии</h2>
+                <p class="section__desc">Это не общий созвон и не абстрактные советы. Это структурный разбор конкретной ситуации вашего проекта или компании.</p>
+            </div>
+            <div class="session__content">
+                <div class="session__block fade-in">
+                    <h3 class="session__block-title">Для кого подходит</h3>
+                    <ul class="session__list">
+                        <li>Стартап перед запуском или перед инвестором</li>
+                        <li>Технологическая компания на этапе роста</li>
+                        <li>Проект, где нужно разобраться с правами, командой или структурой</li>
+                        <li>Бизнес, выходящий в новую юрисдикцию</li>
+                    </ul>
+                </div>
+                <div class="session__block fade-in">
+                    <h3 class="session__block-title">Что разбираем</h3>
+                    <ul class="session__list">
+                        <li>Текущую юридическую конструкцию проекта</li>
+                        <li>Права на продукт и интеллектуальную собственность</li>
+                        <li>Отношения между основателями и командой</li>
+                        <li>Договорной контур с клиентами и партнерами</li>
+                        <li>Риски, слабые места и узкие точки</li>
+                    </ul>
+                </div>
+                <div class="session__block fade-in">
+                    <h3 class="session__block-title">Что вы получаете по итогам</h3>
+                    <div class="session__results">
+                        <div class="session__result">
+                            <div class="session__result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <span>Ясная карта рисков</span>
+                        </div>
+                        <div class="session__result">
+                            <div class="session__result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <span>Понимание слабых мест</span>
+                        </div>
+                        <div class="session__result">
+                            <div class="session__result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <span>Логика дальнейших действий</span>
+                        </div>
+                        <div class="session__result">
+                            <div class="session__result-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <span>Приоритеты: что делать сначала, что потом</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="session__cta fade-in">
+                <a href="#contact" class="btn btn--primary btn--large">Записаться на стратегическую сессию</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="process section section--light" id="process">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Процесс</span>
+                <h2 class="section__title">Как проходит работа</h2>
+            </div>
+            <div class="process__steps">
+                <div class="process__step fade-in">
+                    <div class="process__step-num">01</div>
+                    <div class="process__step-line"></div>
+                    <h3 class="process__step-title">Вводный контакт</h3>
+                    <p class="process__step-desc">Короткий разговор, чтобы понять вашу ситуацию и определить, чем именно я могу быть полезен</p>
+                </div>
+                <div class="process__step fade-in">
+                    <div class="process__step-num">02</div>
+                    <div class="process__step-line"></div>
+                    <h3 class="process__step-title">Сбор контекста</h3>
+                    <p class="process__step-desc">Изучаю документы, структуру, договоры — всё, что нужно для качественного разбора</p>
+                </div>
+                <div class="process__step fade-in">
+                    <div class="process__step-num">03</div>
+                    <div class="process__step-line"></div>
+                    <h3 class="process__step-title">Стратегическая сессия</h3>
+                    <p class="process__step-desc">Детальный разбор вашей ситуации: риски, слабые места, возможности, структура</p>
+                </div>
+                <div class="process__step fade-in">
+                    <div class="process__step-num">04</div>
+                    <div class="process__step-line"></div>
+                    <h3 class="process__step-title">Рекомендации и план</h3>
+                    <p class="process__step-desc">Конкретные следующие шаги с приоритетами — что делать сначала, что потом, что можно отложить</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT / TRUST ==================== -->
+    <section class="about section" id="trust">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo fade-in">
+                    <div class="about__photo-frame">
+                        <img src="img/photo.jpg" alt="Нариман — венчурный юрист, Fenix Law">
+                    </div>
+                    <div class="about__photo-accent"></div>
+                </div>
+                <div class="about__content fade-in">
+                    <span class="section__label">О практике</span>
+                    <h2 class="section__title">Почему мне доверяют</h2>
+                    <p class="about__text">
+                        Я — венчурный юрист. Работаю на стыке права, стартапов и инвестиций.
+                        Понимаю не только документы, но и природу технологического бизнеса —
+                        как устроен продукт, как принимаются решения, как работает привлечение капитала.
+                    </p>
+                    <div class="about__points">
+                        <div class="about__point">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Опыт работы с экосистемой инноваций и стартапами</span>
+                        </div>
+                        <div class="about__point">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Практика в Астана Хаб, МФЦА и трансграничных структурах</span>
+                        </div>
+                        <div class="about__point">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Помогаю выстраивать юридическую структуру, готовую к росту и инвестициям</span>
+                        </div>
+                        <div class="about__point">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Понимаю продукт, данные, команду и сделки — а не только бумаги</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CASES ==================== -->
+    <section class="cases section section--dark" id="cases">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Типовые ситуации</span>
+                <h2 class="section__title">С чем ко мне приходят</h2>
+            </div>
+            <div class="cases__grid">
+                <div class="cases__card fade-in">
+                    <div class="cases__card-marker"></div>
+                    <p class="cases__card-text">Стартап перед инвестором, но права на продукт не оформлены — непонятно, кому что принадлежит</p>
+                </div>
+                <div class="cases__card fade-in">
+                    <div class="cases__card-marker"></div>
+                    <p class="cases__card-text">Два сооснователя делят 50/50, но нет ни соглашения, ни правил выхода, ни вестинга</p>
+                </div>
+                <div class="cases__card fade-in">
+                    <div class="cases__card-marker"></div>
+                    <p class="cases__card-text">Технологическая компания с сильным продуктом, но слабым контуром интеллектуальной собственности</p>
+                </div>
+                <div class="cases__card fade-in">
+                    <div class="cases__card-marker"></div>
+                    <p class="cases__card-text">Запуск второго продукта внутри действующей компании — нужна новая структура и разделение активов</p>
+                </div>
+                <div class="cases__card fade-in">
+                    <div class="cases__card-marker"></div>
+                    <p class="cases__card-text">Выход в Астана Хаб, МФЦА или ОАЭ — нужна юрисдикционная модель и понимание последствий</p>
+                </div>
+                <div class="cases__card fade-in">
+                    <div class="cases__card-marker"></div>
+                    <p class="cases__card-text">Платформа работает с данными пользователей, но нет политик, согласий и правовой рамки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Отзывы</span>
+                <h2 class="section__title">Что говорят клиенты</h2>
+            </div>
+            <div class="testimonials__grid testimonials__grid--two">
+                <div class="testimonials__card fade-in">
+                    <div class="testimonials__card-quote">
+                        <svg width="32" height="24" viewBox="0 0 32 24" fill="none">
+                            <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 8 8 7.2 12H14v12H0zm18 0V14.4C18 6.4 22.8 1.6 32 0l.8 3.2C27.2 4.8 25.6 8 25.2 12H32v12H18z" fill="currentColor" opacity="0.08"/>
+                        </svg>
+                    </div>
+                    <p class="testimonials__card-text">&laquo;Я благодарна Нариману и компании Fenix Law за грамотную юридическую поддержку и помощь в выстраивании надежного внешнего контура, а именно политики конфиденциальности и условий использования. Для нас эти документы были критически важными, так как проект взаимодействует с чувствительными данными детей и подростков. Также Нариман помог нам грамотно оформить отношения с разработчиком.&raquo;</p>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar"></div>
+                        <div>
+                            <div class="testimonials__card-name">Томирис</div>
+                            <div class="testimonials__card-role">Основатель, проект &laquo;Анама&raquo;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__card fade-in">
+                    <div class="testimonials__card-quote">
+                        <svg width="32" height="24" viewBox="0 0 32 24" fill="none">
+                            <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 8 8 7.2 12H14v12H0zm18 0V14.4C18 6.4 22.8 1.6 32 0l.8 3.2C27.2 4.8 25.6 8 25.2 12H32v12H18z" fill="currentColor" opacity="0.08"/>
+                        </svg>
+                    </div>
+                    <p class="testimonials__card-text">&laquo;У нас технологическая компания в сфере наружной рекламы, и мы планировали выйти на юрисдикцию Abu Dhabi Global Market. Нариман сделал нам детальный и качественный план выхода и помог с начальными шагами. Грамотный юридический советник.&raquo;</p>
+                    <div class="testimonials__card-author">
+                        <div class="testimonials__card-avatar"></div>
+                        <div>
+                            <div class="testimonials__card-name">Адильбек</div>
+                            <div class="testimonials__card-role">Основатель, WideLoop</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq section section--light" id="faq">
+        <div class="container">
+            <div class="section__header fade-in">
+                <span class="section__label">Частые вопросы</span>
+                <h2 class="section__title">Вопросы и ответы</h2>
+            </div>
+            <div class="faq__list">
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>Что такое стратегическая сессия?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Это формат юридической консультации, в котором мы детально разбираем конкретную ситуацию вашего проекта или компании. Не общие советы, а структурный анализ: где вы сейчас, какие есть риски, что нужно закрыть и в каком порядке.</p>
+                    </div>
+                </div>
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>Чем стратегическая сессия отличается от обычной консультации?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Обычная консультация — это ответы на вопросы. Стратегическая сессия — это полный разбор вашей юридической конструкции. Я заранее изучаю контекст, документы и структуру, а на самой сессии даю системную картину: риски, слабые места, приоритеты и план действий.</p>
+                    </div>
+                </div>
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>С кем вы работаете?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Со стартапами на ранней стадии и технологическими компаниями — платформы, маркетплейсы, финтех, продукты на базе данных и ИИ. С теми, кому важна не просто бумага, а юридическая архитектура, которая выдерживает рост.</p>
+                    </div>
+                </div>
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>Работаете ли вы только со стартапами?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Нет. Я работаю и с действующими технологическими компаниями — там, где нужно разобраться со структурой, правами на продукт, данными, командой, сделками или выходом в новые юрисдикции.</p>
+                    </div>
+                </div>
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>Можно ли обратиться с действующей технологической компанией?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Да, и часто именно с этим приходят. Действующая компания с сильным продуктом, но без собранной юридической конструкции — одна из самых частых ситуаций. Я помогаю провести аудит и закрыть слабые места.</p>
+                    </div>
+                </div>
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>Помогаете ли вы с Астана Хаб, МФЦА или ОАЭ?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Да. Работаю с проектами, которые входят или уже находятся в Астана Хаб, регистрируются в МФЦА или рассматривают ОАЭ. Помогаю выбрать оптимальную юрисдикционную модель и выстроить структуру.</p>
+                    </div>
+                </div>
+                <div class="faq__item fade-in">
+                    <button class="faq__question">
+                        <span>Что я получу по итогам стратегической сессии?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer">
+                        <p>Ясную карту рисков, понимание слабых мест вашей текущей конструкции, логику дальнейших действий и приоритеты — что делать сначала, что потом, а что можно отложить. Вы уходите с конкретным планом, а не с набором абстрактных рекомендаций.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FINAL CTA ==================== -->
+    <section class="cta section" id="contact">
+        <div class="container">
+            <div class="cta__inner fade-in">
+                <div class="cta__content">
+                    <h2 class="cta__title">Если вам нужен не общий совет, а трезвый разбор вашей ситуации</h2>
+                    <p class="cta__subtitle">Давайте обсудим ваш проект</p>
+
+                    <form class="cta__form" id="contactForm">
+                        <div class="cta__form-row">
+                            <input type="text" name="name" placeholder="Ваше имя" required class="cta__input">
+                            <input type="text" name="contact" placeholder="Телеграм, телефон или почта" required class="cta__input">
+                        </div>
+                        <textarea name="message" placeholder="Коротко опишите ваш проект или ситуацию" rows="3" class="cta__textarea"></textarea>
+                        <button type="submit" class="btn btn--primary btn--large btn--full">Записаться на консультацию</button>
+                    </form>
+
+                    <div class="cta__divider">
+                        <span>или напишите напрямую</span>
+                    </div>
+
+                    <div class="cta__socials">
+                        <a href="https://t.me/Fenixlaw" class="cta__social" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-16.5 7.5a2.25 2.25 0 0 0 .126 4.178l3.447 1.149 1.598 5.143a1.5 1.5 0 0 0 2.524.564l2.294-2.294 4.038 3.03a2.25 2.25 0 0 0 3.503-1.242l3.75-16.5a2.25 2.25 0 0 0-2.758-2.743z" fill="currentColor"/>
+                            </svg>
+                            <span>Телеграм</span>
+                        </a>
+                        <a href="https://www.instagram.com/fenixlaw.legalstartup?igsh=MWZ6b3gwczRzMGJjdA%3D%3D&utm_source=qr" class="cta__social" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                            </svg>
+                            <span>Инстаграм</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__logo">
+                <img src="img/logo-light.png" alt="Fenix Law" class="footer__logo-img">
+            </div>
+            <div class="footer__text">
+                <p>&copy; 2025 Fenix Law. Бутиковая юридическая практика.</p>
+                <p>Юридическая архитектура для стартапов и технологических компаний.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Загружаем Google Fonts после рендера страницы
+        window.addEventListener('load', function() {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap';
+            document.head.appendChild(link);
+        });
+    </script>
+</body>
+</html>
