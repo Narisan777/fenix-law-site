@@ -111,25 +111,41 @@ document.querySelectorAll('.faq__question').forEach(button => {
     });
 });
 
-// ==================== CONTACT FORM ====================
+// ==================== CONTACT FORM (Formspree) ====================
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        const formData = new FormData(this);
-        const data = Object.fromEntries(formData.entries());
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Отправляю...';
+        submitBtn.disabled = true;
 
-        // For now, show success message
-        // In production, replace with actual form submission (e.g., fetch to backend or email service)
-        console.log('Form submitted:', data);
+        try {
+            const response = await fetch('https://formspree.io/f/meevgzle', {
+                method: 'POST',
+                body: new FormData(this),
+                headers: { 'Accept': 'application/json' }
+            });
 
-        this.innerHTML = `
-            <div class="cta__form-success">
-                <p>Заявка отправлена</p>
-                <span>Я свяжусь с вами в ближайшее время</span>
-            </div>
-        `;
+            if (response.ok) {
+                this.innerHTML = `
+                    <div class="cta__form-success">
+                        <p>Заявка отправлена</p>
+                        <span>Я свяжусь с вами в ближайшее время</span>
+                    </div>
+                `;
+            } else {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                alert('Что-то пошло не так. Напишите мне напрямую в Телеграм.');
+            }
+        } catch (err) {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            alert('Ошибка соединения. Напишите мне напрямую в Телеграм.');
+        }
     });
 }
