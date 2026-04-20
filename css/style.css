@@ -722,6 +722,72 @@ ul {
     margin-top: 2px;
 }
 
+/* ==================== ABOUT STATS ==================== */
+.about__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--color-border);
+}
+
+.about__stat {
+    text-align: center;
+    padding: 36px 24px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color var(--transition-base);
+}
+
+.about__stat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-gold), rgba(201, 168, 76, 0.2));
+}
+
+.about__stat:hover {
+    border-color: rgba(201, 168, 76, 0.2);
+}
+
+.about__stat-num {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--color-gold);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.about__stat-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.about__stat-sub {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+    .about__stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 40px;
+        padding-top: 32px;
+    }
+}
+
 /* ==================== CASES ==================== */
 .cases__grid {
     display: grid;
