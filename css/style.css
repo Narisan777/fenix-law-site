@@ -373,6 +373,24 @@ ul {
     background: var(--color-accent-glow);
 }
 
+.hero__price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.hero__price-label {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+}
+
+.hero__price-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
 .hero__actions {
     display: flex;
     gap: 16px;
@@ -400,92 +418,113 @@ ul {
     50% { transform: translateX(-50%) translateY(6px); }
 }
 
-/* ==================== FOR WHOM ==================== */
-.for-whom__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+/* ==================== PRODUCTS ==================== */
+.products__group {
+    margin-bottom: 40px;
 }
 
-.for-whom__card {
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    padding: 48px 40px;
-    transition: all var(--transition-base);
-    position: relative;
-    overflow: hidden;
+.products__group:last-child {
+    margin-bottom: 0;
 }
 
-.for-whom__card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--color-accent), transparent);
-    opacity: 0;
-    transition: opacity var(--transition-base);
-}
-
-.for-whom__card:hover {
-    border-color: rgba(74, 124, 201, 0.15);
-    background: var(--color-bg-card-hover);
-}
-
-.for-whom__card:hover::before {
-    opacity: 1;
-}
-
-.for-whom__card-icon {
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background: var(--color-accent-glow);
-    color: var(--color-accent);
-    margin-bottom: 24px;
-}
-
-.for-whom__card-title {
-    font-family: var(--font-display);
-    font-size: 1.35rem;
+.products__group-label {
+    font-size: 0.72rem;
     font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--color-white);
-}
-
-.for-whom__card-desc {
-    font-size: 0.92rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
     color: var(--color-text-muted);
-    line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
-.for-whom__card-list li {
-    padding: 8px 0;
-    font-size: 0.9rem;
-    color: var(--color-text);
-    border-bottom: 1px solid var(--color-border);
-    display: flex;
-    align-items: center;
+.products__list {
+    display: grid;
     gap: 12px;
 }
 
-.for-whom__card-list li:last-child {
-    border-bottom: none;
+.products__card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: all var(--transition-base);
 }
 
-.for-whom__card-list li::before {
-    content: '';
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: var(--color-accent);
+.products__card:hover {
+    border-color: rgba(74, 124, 201, 0.2);
+    background: var(--color-bg-card-hover);
+}
+
+.products__card--featured {
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    padding: 32px 28px;
+}
+
+.products__card--featured:hover {
+    border-color: rgba(201, 168, 76, 0.5);
+}
+
+.products__card-left {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.products__card-icon {
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--color-accent-glow);
+    color: var(--color-accent);
+}
+
+.products__card--featured .products__card-icon {
+    background: var(--color-gold-subtle);
+    color: var(--color-gold);
+}
+
+.products__card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 4px;
+}
+
+.products__card--featured .products__card-title {
+    font-size: 1.15rem;
+}
+
+.products__card-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+    max-width: 480px;
+}
+
+.products__card-price {
+    font-size: 0.92rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.products__card-price--strong {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+.products__divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 48px 0 40px;
 }
 
 /* ==================== SERVICES ==================== */
@@ -596,6 +635,20 @@ ul {
     color: var(--color-accent);
     flex-shrink: 0;
     display: flex;
+}
+
+.session--compact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.session__results--centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 40px;
 }
 
 .session__cta {
@@ -723,6 +776,18 @@ ul {
 }
 
 /* ==================== LEGAL AUDIT ==================== */
+.audit__price-pill {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 10px 22px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-gold);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    border-radius: 100px;
+    background: var(--color-gold-subtle);
+}
+
 .audit__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -852,6 +917,21 @@ ul {
 
     .audit__hub {
         padding: 28px 24px;
+    }
+
+    .products__card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .products__card-price {
+        text-align: left;
+    }
+
+    .session__results--centered {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -1536,7 +1616,8 @@ ul {
     }
 
     /* Testimonials */
-    .testimonials__grid {
+    .testimonials__grid,
+    .testimonials__grid--two {
         grid-template-columns: 1fr;
     }
 
