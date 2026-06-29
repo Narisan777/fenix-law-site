@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fenix Law — Юридическая архитектура для технологических компаний и стартапов</title>
-    <meta name="description" content="Fenix Law — бутиковая юридическая практика. Юридический аудит, структурирование, МФЦА и Astana Hub для технологических компаний; стратегические сессии для стартапов.">
+    <title data-i18n-title="page_title">Fenix Law — Юридическая архитектура для технологических компаний и стартапов</title>
+    <meta name="description" data-i18n-meta-desc="page_desc" content="Fenix Law — бутиковая юридическая практика. Юридический аудит, структурирование, МФЦА и Astana Hub для технологических компаний; стратегические сессии для стартапов.">
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts: загружается асинхронно после рендера (см. скрипт в конце body) -->
     <script type="text/javascript">
@@ -24,14 +24,18 @@
                 <img src="img/logo-light.png" alt="Fenix Law" class="header__logo-img">
             </a>
             <nav class="header__nav" id="nav">
-                <a href="#products" class="header__link">Услуги</a>
-                <a href="#audit" class="header__link">Юридический аудит</a>
-                <a href="#method" class="header__link">Подход</a>
-                <a href="#trust" class="header__link">О практике</a>
-                <a href="#faq" class="header__link">Вопросы</a>
-                <a href="https://t.me/Fenixlaw" class="header__link header__link--cta" target="_blank" rel="noopener">Обсудить проект</a>
+                <a href="#products" class="header__link" data-i18n="nav_services">Услуги</a>
+                <a href="#audit" class="header__link" data-i18n="nav_audit">Юридический аудит</a>
+                <a href="#method" class="header__link" data-i18n="nav_approach">Подход</a>
+                <a href="#trust" class="header__link" data-i18n="nav_about">О практике</a>
+                <a href="#faq" class="header__link" data-i18n="nav_faq">Вопросы</a>
+                <a href="https://t.me/Fenixlaw" class="header__link header__link--cta" target="_blank" rel="noopener" data-i18n="nav_cta">Обсудить проект</a>
             </nav>
-            <button class="header__burger" id="burger" aria-label="Меню">
+            <div class="lang-toggle">
+                <button class="lang-btn" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <button class="header__burger" id="burger" data-i18n-aria="burger_label" aria-label="Меню">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -44,28 +48,28 @@
         <div class="hero__bg-grid"></div>
         <div class="container hero__inner">
             <div class="hero__content">
-                <div class="hero__badge fade-in">Бутиковая юридическая практика</div>
+                <div class="hero__badge fade-in" data-i18n="hero_badge">Бутиковая юридическая практика</div>
                 <h1 class="hero__title fade-in">
-                    Юридическая архитектура<br>
-                    <span class="hero__title-accent">для технологических компаний и стартапов</span>
+                    <span data-i18n="hero_title_line1">Юридическая архитектура</span><br>
+                    <span class="hero__title-accent" data-i18n="hero_title_accent">для технологических компаний и стартапов</span>
                 </h1>
-                <p class="hero__subtitle fade-in">
+                <p class="hero__subtitle fade-in" data-i18n="hero_subtitle">
                     Помогаю собрать бизнес так, чтобы он мог расти, привлекать инвестиции
                     и не ломаться на непрочном фундаменте. Не просто документы — а юридическая
                     конструкция, которая выдерживает рост.
                 </p>
                 <div class="hero__price fade-in">
-                    <span class="hero__price-label">Юридический аудит</span>
-                    <span class="hero__price-value">от 300 000 ₸</span>
+                    <span class="hero__price-label" data-i18n="hero_price_label">Юридический аудит</span>
+                    <span class="hero__price-value" data-i18n="hero_price_value">от 300 000 ₸</span>
                 </div>
                 <div class="hero__actions fade-in">
-                    <a href="https://t.me/Fenixlaw" class="btn btn--primary" target="_blank" rel="noopener">Обсудить проект в Телеграм</a>
-                    <a href="#audit" class="btn btn--outline">Узнать про аудит</a>
+                    <a href="https://t.me/Fenixlaw" class="btn btn--primary" target="_blank" rel="noopener" data-i18n="hero_btn_primary">Обсудить проект в Телеграм</a>
+                    <a href="#audit" class="btn btn--outline" data-i18n="hero_btn_outline">Узнать про аудит</a>
                 </div>
             </div>
         </div>
         <div class="hero__scroll-hint">
-            <span>Узнать больше</span>
+            <span data-i18n="hero_scroll">Узнать больше</span>
             <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
                 <path d="M8 0v20m0 0l6-6m-6 6l-6-6" stroke="currentColor" stroke-width="1.5"/>
             </svg>
@@ -76,9 +80,9 @@
     <section class="products section" id="products">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Для технологических компаний</span>
-                <h2 class="section__title">Чем я могу быть полезен</h2>
-                <p class="section__desc">Краткий обзор — детали и точный расчёт обсуждаем в Телеграм</p>
+                <span class="section__label" data-i18n="products_label">Для технологических компаний</span>
+                <h2 class="section__title" data-i18n="products_title">Чем я могу быть полезен</h2>
+                <p class="section__desc" data-i18n="products_desc">Краткий обзор — детали и точный расчёт обсуждаем в Телеграм</p>
             </div>
 
             <div class="products__group">
@@ -92,11 +96,11 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="products__card-title">Юридический аудит</h3>
-                                <p class="products__card-desc">Быстрая проверка по выбранным блокам или комплексный разбор по всем шести: структура, IP, команда, контракты, данные, рост</p>
+                                <h3 class="products__card-title" data-i18n="p_card1_title">Юридический аудит</h3>
+                                <p class="products__card-desc" data-i18n="p_card1_desc">Быстрая проверка по выбранным блокам или комплексный разбор по всем шести: структура, IP, команда, контракты, данные, рост</p>
                             </div>
                         </div>
-                        <span class="products__card-price products__card-price--strong">от 300 000 ₸</span>
+                        <span class="products__card-price products__card-price--strong" data-i18n="p_card1_price">от 300 000 ₸</span>
                     </div>
 
                     <div class="products__card fade-in">
@@ -108,11 +112,11 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="products__card-title">Юрисдикции — МФЦА и Astana Hub</h3>
-                                <p class="products__card-desc">Открытие компании и сопровождение входа в экосистему</p>
+                                <h3 class="products__card-title" data-i18n="p_card2_title">Юрисдикции — МФЦА и Astana Hub</h3>
+                                <p class="products__card-desc" data-i18n="p_card2_desc">Открытие компании и сопровождение входа в экосистему</p>
                             </div>
                         </div>
-                        <span class="products__card-price">по запросу</span>
+                        <span class="products__card-price" data-i18n="p_card2_price">по запросу</span>
                     </div>
 
                     <div class="products__card fade-in">
@@ -123,8 +127,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="products__card-title">Структура и капитал</h3>
-                                <p class="products__card-desc">Соглашения между сооснователями, передача прав ИС, структурирование инвестиционных сделок</p>
+                                <h3 class="products__card-title" data-i18n="p_card3_title">Структура и капитал</h3>
+                                <p class="products__card-desc" data-i18n="p_card3_desc">Соглашения между сооснователями, передача прав ИС, структурирование инвестиционных сделок</p>
                             </div>
                         </div>
                         <span class="products__card-price">от $1 000</span>
@@ -138,8 +142,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="products__card-title">Операционная поддержка</h3>
-                                <p class="products__card-desc">Privacy Policy и Terms of Use, договоры с командой, постоянное юридическое сопровождение</p>
+                                <h3 class="products__card-title" data-i18n="p_card4_title">Операционная поддержка</h3>
+                                <p class="products__card-desc" data-i18n="p_card4_desc">Privacy Policy и Terms of Use, договоры с командой, постоянное юридическое сопровождение</p>
                             </div>
                         </div>
                         <span class="products__card-price">от $1 500</span>
@@ -150,7 +154,7 @@
             <hr class="products__divider">
 
             <div class="products__group">
-                <p class="products__group-label">Для стартапов</p>
+                <p class="products__group-label" data-i18n="products_group_label">Для стартапов</p>
                 <div class="products__list">
                     <div class="products__card fade-in">
                         <div class="products__card-left">
@@ -161,8 +165,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="products__card-title">Стратегическая сессия</h3>
-                                <p class="products__card-desc">Структурный разбор вашей ситуации: риски, доли, права на продукт, готовность к инвестициям</p>
+                                <h3 class="products__card-title" data-i18n="p_card5_title">Стратегическая сессия</h3>
+                                <p class="products__card-desc" data-i18n="p_card5_desc">Структурный разбор вашей ситуации: риски, доли, права на продукт, готовность к инвестициям</p>
                             </div>
                         </div>
                         <span class="products__card-price products__card-price--strong">$100</span>
@@ -176,40 +180,40 @@
     <section class="services section section--dark" id="method">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Подход</span>
-                <h2 class="section__title">Как я смотрю на юридическую конструкцию</h2>
-                <p class="section__desc">За каждым продуктом — один и тот же метод: не закрыть формальность, а собрать систему, которая выдержит рост</p>
+                <span class="section__label" data-i18n="method_label">Подход</span>
+                <h2 class="section__title" data-i18n="method_title">Как я смотрю на юридическую конструкцию</h2>
+                <p class="section__desc" data-i18n="method_desc">За каждым продуктом — один и тот же метод: не закрыть формальность, а собрать систему, которая выдержит рост</p>
             </div>
             <div class="services__grid">
                 <div class="services__card fade-in">
                     <span class="services__card-num">01</span>
-                    <h3 class="services__card-title">Системность, а не точечные правки</h3>
-                    <p class="services__card-desc">Документ всегда часть конструкции. Меняю один элемент — проверяю, как это отражается на остальных.</p>
+                    <h3 class="services__card-title" data-i18n="method1_title">Системность, а не точечные правки</h3>
+                    <p class="services__card-desc" data-i18n="method1_desc">Документ всегда часть конструкции. Меняю один элемент — проверяю, как это отражается на остальных.</p>
                 </div>
                 <div class="services__card fade-in">
                     <span class="services__card-num">02</span>
-                    <h3 class="services__card-title">Решения на годы вперёд</h3>
-                    <p class="services__card-desc">Смотрю не только на сегодняшнюю задачу, но и на то, как структура поведёт себя при раунде, росте команды или выходе на новый рынок.</p>
+                    <h3 class="services__card-title" data-i18n="method2_title">Решения на годы вперёд</h3>
+                    <p class="services__card-desc" data-i18n="method2_desc">Смотрю не только на сегодняшнюю задачу, но и на то, как структура поведёт себя при раунде, росте команды или выходе на новый рынок.</p>
                 </div>
                 <div class="services__card fade-in">
                     <span class="services__card-num">03</span>
-                    <h3 class="services__card-title">Понимание регулятора изнутри</h3>
-                    <p class="services__card-desc">Опыт работы в государственных структурах — вижу логику требований не как внешний наблюдатель, а как человек, который их формулировал.</p>
+                    <h3 class="services__card-title" data-i18n="method3_title">Понимание регулятора изнутри</h3>
+                    <p class="services__card-desc" data-i18n="method3_desc">Опыт работы в государственных структурах — вижу логику требований не как внешний наблюдатель, а как человек, который их формулировал.</p>
                 </div>
                 <div class="services__card fade-in">
                     <span class="services__card-num">04</span>
-                    <h3 class="services__card-title">Язык продукта, не только документов</h3>
-                    <p class="services__card-desc">Понимаю, как устроен код, данные и юнит-экономика — поэтому документ соответствует тому, что реально происходит в бизнесе.</p>
+                    <h3 class="services__card-title" data-i18n="method4_title">Язык продукта, не только документов</h3>
+                    <p class="services__card-desc" data-i18n="method4_desc">Понимаю, как устроен код, данные и юнит-экономика — поэтому документ соответствует тому, что реально происходит в бизнесе.</p>
                 </div>
                 <div class="services__card fade-in">
                     <span class="services__card-num">05</span>
-                    <h3 class="services__card-title">Приоритизация, а не список задач</h3>
-                    <p class="services__card-desc">Не все риски одинаково срочны. Показываю, что нужно закрыть сейчас, а что можно отложить без вреда для бизнеса.</p>
+                    <h3 class="services__card-title" data-i18n="method5_title">Приоритизация, а не список задач</h3>
+                    <p class="services__card-desc" data-i18n="method5_desc">Не все риски одинаково срочны. Показываю, что нужно закрыть сейчас, а что можно отложить без вреда для бизнеса.</p>
                 </div>
                 <div class="services__card fade-in">
                     <span class="services__card-num">06</span>
-                    <h3 class="services__card-title">Мост между юрисдикциями</h3>
-                    <p class="services__card-desc">Опыт в МФЦА, Astana Hub и трансграничных структурах — помогаю не выбрать юрисдикцию наугад, а понять последствия выбора.</p>
+                    <h3 class="services__card-title" data-i18n="method6_title">Мост между юрисдикциями</h3>
+                    <p class="services__card-desc" data-i18n="method6_desc">Опыт в МФЦА, Astana Hub и трансграничных структурах — помогаю не выбрать юрисдикцию наугад, а понять последствия выбора.</p>
                 </div>
             </div>
         </div>
@@ -219,9 +223,9 @@
     <section class="session session--compact section" id="session">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Для стартапов</span>
-                <h2 class="section__title">Стратегическая сессия — $100</h2>
-                <p class="section__desc">Не общий созвон и не абстрактные советы. Структурный разбор вашей ситуации: риски, доли, права на продукт — с готовой картой действий на выходе.</p>
+                <span class="section__label" data-i18n="session_label">Для стартапов</span>
+                <h2 class="section__title" data-i18n="session_title">Стратегическая сессия — $100</h2>
+                <p class="section__desc" data-i18n="session_desc">Не общий созвон и не абстрактные советы. Структурный разбор вашей ситуации: риски, доли, права на продукт — с готовой картой действий на выходе.</p>
             </div>
             <div class="session__results session__results--centered fade-in">
                 <div class="session__result">
@@ -231,7 +235,7 @@
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <span>Ясная карта рисков</span>
+                    <span data-i18n="session_result1">Ясная карта рисков</span>
                 </div>
                 <div class="session__result">
                     <div class="session__result-icon">
@@ -240,7 +244,7 @@
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <span>Понимание слабых мест</span>
+                    <span data-i18n="session_result2">Понимание слабых мест</span>
                 </div>
                 <div class="session__result">
                     <div class="session__result-icon">
@@ -249,11 +253,11 @@
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
                         </svg>
                     </div>
-                    <span>Приоритеты: что сначала, что потом</span>
+                    <span data-i18n="session_result3">Приоритеты: что сначала, что потом</span>
                 </div>
             </div>
             <div class="session__cta fade-in">
-                <a href="https://t.me/Fenixlaw" class="btn btn--primary btn--large" target="_blank" rel="noopener">Записаться на стратегическую сессию</a>
+                <a href="https://t.me/Fenixlaw" class="btn btn--primary btn--large" target="_blank" rel="noopener" data-i18n="session_btn">Записаться на стратегическую сессию</a>
             </div>
         </div>
     </section>
@@ -262,33 +266,33 @@
     <section class="process section section--light" id="process">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Процесс</span>
-                <h2 class="section__title">Как проходит работа</h2>
+                <span class="section__label" data-i18n="process_label">Процесс</span>
+                <h2 class="section__title" data-i18n="process_title">Как проходит работа</h2>
             </div>
             <div class="process__steps">
                 <div class="process__step fade-in">
                     <div class="process__step-num">01</div>
                     <div class="process__step-line"></div>
-                    <h3 class="process__step-title">Вводный контакт</h3>
-                    <p class="process__step-desc">Короткий разговор, чтобы понять вашу ситуацию и определить, чем именно я могу быть полезен</p>
+                    <h3 class="process__step-title" data-i18n="proc1_title">Вводный контакт</h3>
+                    <p class="process__step-desc" data-i18n="proc1_desc">Короткий разговор, чтобы понять вашу ситуацию и определить, чем именно я могу быть полезен</p>
                 </div>
                 <div class="process__step fade-in">
                     <div class="process__step-num">02</div>
                     <div class="process__step-line"></div>
-                    <h3 class="process__step-title">Сбор контекста</h3>
-                    <p class="process__step-desc">Изучаю документы, структуру, договоры — всё, что нужно для качественного разбора</p>
+                    <h3 class="process__step-title" data-i18n="proc2_title">Сбор контекста</h3>
+                    <p class="process__step-desc" data-i18n="proc2_desc">Изучаю документы, структуру, договоры — всё, что нужно для качественного разбора</p>
                 </div>
                 <div class="process__step fade-in">
                     <div class="process__step-num">03</div>
                     <div class="process__step-line"></div>
-                    <h3 class="process__step-title">Стратегическая сессия</h3>
-                    <p class="process__step-desc">Детальный разбор вашей ситуации: риски, слабые места, возможности, структура</p>
+                    <h3 class="process__step-title" data-i18n="proc3_title">Стратегическая сессия</h3>
+                    <p class="process__step-desc" data-i18n="proc3_desc">Детальный разбор вашей ситуации: риски, слабые места, возможности, структура</p>
                 </div>
                 <div class="process__step fade-in">
                     <div class="process__step-num">04</div>
                     <div class="process__step-line"></div>
-                    <h3 class="process__step-title">Рекомендации и план</h3>
-                    <p class="process__step-desc">Конкретные следующие шаги с приоритетами — что делать сначала, что потом, что можно отложить</p>
+                    <h3 class="process__step-title" data-i18n="proc4_title">Рекомендации и план</h3>
+                    <p class="process__step-desc" data-i18n="proc4_desc">Конкретные следующие шаги с приоритетами — что делать сначала, что потом, что можно отложить</p>
                 </div>
             </div>
         </div>
@@ -298,83 +302,83 @@
     <section class="audit section section--dark" id="audit">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Для технологических компаний</span>
-                <h2 class="section__title">Юридический аудит</h2>
-                <p class="section__desc">Способ понять, где юридическая конструкция бизнеса уже не соответствует его текущему состоянию — и исправить это до того, как риски ударят по деньгам, репутации и устойчивости бизнеса.</p>
-                <div class="audit__price-pill">Быстрая проверка — от 300 000 ₸ · Комплексный разбор по всем блокам — от 700 000 ₸</div>
+                <span class="section__label" data-i18n="audit_label">Для технологических компаний</span>
+                <h2 class="section__title" data-i18n="audit_title">Юридический аудит</h2>
+                <p class="section__desc" data-i18n="audit_desc">Способ понять, где юридическая конструкция бизнеса уже не соответствует его текущему состоянию — и исправить это до того, как риски ударят по деньгам, репутации и устойчивости бизнеса.</p>
+                <div class="audit__price-pill" data-i18n="audit_price_pill">Быстрая проверка — от 300 000 ₸ · Комплексный разбор по всем блокам — от 700 000 ₸</div>
             </div>
 
             <div class="audit__grid">
                 <div class="audit__card fade-in">
                     <span class="audit__card-num">01</span>
-                    <h3 class="audit__card-title">Корпоративная структура и контроль</h3>
-                    <p class="audit__card-desc">Проверяю актуальность корпоративной конструкции, распределение долей, механизмы контроля и защиты от нежелательных изменений.</p>
+                    <h3 class="audit__card-title" data-i18n="audit1_title">Корпоративная структура и контроль</h3>
+                    <p class="audit__card-desc" data-i18n="audit1_desc">Проверяю актуальность корпоративной конструкции, распределение долей, механизмы контроля и защиты от нежелательных изменений.</p>
                 </div>
                 <div class="audit__card fade-in">
                     <span class="audit__card-num">02</span>
-                    <h3 class="audit__card-title">Права на продукт и IP-цепочка</h3>
-                    <p class="audit__card-desc">Анализирую, кому принадлежат код, дизайн, алгоритмы и контент. Проверяю передачу прав от всех участников разработки.</p>
+                    <h3 class="audit__card-title" data-i18n="audit2_title">Права на продукт и IP-цепочка</h3>
+                    <p class="audit__card-desc" data-i18n="audit2_desc">Анализирую, кому принадлежат код, дизайн, алгоритмы и контент. Проверяю передачу прав от всех участников разработки.</p>
                 </div>
                 <div class="audit__card fade-in">
                     <span class="audit__card-num">03</span>
-                    <h3 class="audit__card-title">Команда, подрядчики и доступы</h3>
-                    <p class="audit__card-desc">Смотрю на договорной контур с сотрудниками, фрилансерами и подрядчиками. Проверяю конфиденциальность, неконкуренцию и передачу результатов работы.</p>
+                    <h3 class="audit__card-title" data-i18n="audit3_title">Команда, подрядчики и доступы</h3>
+                    <p class="audit__card-desc" data-i18n="audit3_desc">Смотрю на договорной контур с сотрудниками, фрилансерами и подрядчиками. Проверяю конфиденциальность, неконкуренцию и передачу результатов работы.</p>
                 </div>
                 <div class="audit__card fade-in">
                     <span class="audit__card-num">04</span>
-                    <h3 class="audit__card-title">Клиентские и партнёрские договоры</h3>
-                    <p class="audit__card-desc">Анализирую пользовательские соглашения, договоры с партнёрами и контрагентами на предмет рисков, дисбалансов и слабых мест.</p>
+                    <h3 class="audit__card-title" data-i18n="audit4_title">Клиентские и партнёрские договоры</h3>
+                    <p class="audit__card-desc" data-i18n="audit4_desc">Анализирую пользовательские соглашения, договоры с партнёрами и контрагентами на предмет рисков, дисбалансов и слабых мест.</p>
                 </div>
                 <div class="audit__card fade-in">
                     <span class="audit__card-num">05</span>
-                    <h3 class="audit__card-title">Персональные данные и публичные документы</h3>
-                    <p class="audit__card-desc">Проверяю политики обработки данных, согласия, условия использования сервиса. Соответствие требованиям законодательства о защите персональных данных.</p>
+                    <h3 class="audit__card-title" data-i18n="audit5_title">Персональные данные и публичные документы</h3>
+                    <p class="audit__card-desc" data-i18n="audit5_desc">Проверяю политики обработки данных, согласия, условия использования сервиса. Соответствие требованиям законодательства о защите персональных данных.</p>
                 </div>
                 <div class="audit__card fade-in">
                     <span class="audit__card-num">06</span>
-                    <h3 class="audit__card-title">Структура роста и юрисдикционные риски</h3>
-                    <p class="audit__card-desc">Оцениваю готовность структуры к масштабированию, привлечению инвестиций и выходу в новые юрисдикции. Выявляю узкие места, которые могут заблокировать рост.</p>
+                    <h3 class="audit__card-title" data-i18n="audit6_title">Структура роста и юрисдикционные риски</h3>
+                    <p class="audit__card-desc" data-i18n="audit6_desc">Оцениваю готовность структуры к масштабированию, привлечению инвестиций и выходу в новые юрисдикции. Выявляю узкие места, которые могут заблокировать рост.</p>
                 </div>
             </div>
 
             <div class="audit__hub fade-in">
-                <div class="audit__hub-badge">Только для участников Астана Хаб</div>
-                <h3 class="audit__hub-title">Дополнительный блок</h3>
-                <p class="audit__hub-text">Соответствие договорной базы приоритетным видам деятельности Астана Хаб — проверяю, насколько текущая юридическая конструкция компании соответствует требованиям и возможностям, которые даёт статус участника.</p>
+                <div class="audit__hub-badge" data-i18n="audit_hub_badge">Только для участников Астана Хаб</div>
+                <h3 class="audit__hub-title" data-i18n="audit_hub_title">Дополнительный блок</h3>
+                <p class="audit__hub-text" data-i18n="audit_hub_text">Соответствие договорной базы приоритетным видам деятельности Астана Хаб — проверяю, насколько текущая юридическая конструкция компании соответствует требованиям и возможностям, которые даёт статус участника.</p>
             </div>
 
             <div class="audit__process fade-in">
-                <h3 class="audit__process-title">Как проходит аудит</h3>
+                <h3 class="audit__process-title" data-i18n="audit_proc_title">Как проходит аудит</h3>
                 <div class="audit__process-steps">
                     <div class="audit__process-step">
                         <div class="audit__process-num">1</div>
                         <div class="audit__process-connector"></div>
-                        <h4 class="audit__process-step-title">Сбор данных</h4>
-                        <p class="audit__process-step-desc">Вводная встреча и документы</p>
+                        <h4 class="audit__process-step-title" data-i18n="audit_proc1_title">Сбор данных</h4>
+                        <p class="audit__process-step-desc" data-i18n="audit_proc1_desc">Вводная встреча и документы</p>
                     </div>
                     <div class="audit__process-step">
                         <div class="audit__process-num">2</div>
                         <div class="audit__process-connector"></div>
-                        <h4 class="audit__process-step-title">Проверка</h4>
-                        <p class="audit__process-step-desc">Юридический анализ по ключевым блокам</p>
+                        <h4 class="audit__process-step-title" data-i18n="audit_proc2_title">Проверка</h4>
+                        <p class="audit__process-step-desc" data-i18n="audit_proc2_desc">Юридический анализ по ключевым блокам</p>
                     </div>
                     <div class="audit__process-step">
                         <div class="audit__process-num">3</div>
                         <div class="audit__process-connector"></div>
-                        <h4 class="audit__process-step-title">Выводы</h4>
-                        <p class="audit__process-step-desc">Приоритизация рисков</p>
+                        <h4 class="audit__process-step-title" data-i18n="audit_proc3_title">Выводы</h4>
+                        <p class="audit__process-step-desc" data-i18n="audit_proc3_desc">Приоритизация рисков</p>
                     </div>
                     <div class="audit__process-step">
                         <div class="audit__process-num">4</div>
-                        <h4 class="audit__process-step-title">Финал</h4>
-                        <p class="audit__process-step-desc">Финальная сессия и дорожная карта</p>
+                        <h4 class="audit__process-step-title" data-i18n="audit_proc4_title">Финал</h4>
+                        <p class="audit__process-step-desc" data-i18n="audit_proc4_desc">Финальная сессия и дорожная карта</p>
                     </div>
                 </div>
-                <p class="audit__process-format">Формат: интервью + анализ документов + аналитический отчёт + сессия с руководством</p>
+                <p class="audit__process-format" data-i18n="audit_proc_format">Формат: интервью + анализ документов + аналитический отчёт + сессия с руководством</p>
             </div>
 
             <div class="audit__cta fade-in">
-                <a href="https://t.me/Fenixlaw" class="btn btn--primary btn--large" target="_blank" rel="noopener">Обсудить аудит вашей компании</a>
+                <a href="https://t.me/Fenixlaw" class="btn btn--primary btn--large" target="_blank" rel="noopener" data-i18n="audit_cta_btn">Обсудить аудит вашей компании</a>
             </div>
         </div>
     </section>
@@ -385,14 +389,14 @@
             <div class="about__inner">
                 <div class="about__photo fade-in">
                     <div class="about__photo-frame">
-                        <img src="img/photo.jpg" alt="Нариман — венчурный юрист, Fenix Law">
+                        <img src="img/photo.jpg" data-i18n-alt="about_photo_alt" alt="Нариман — венчурный юрист, Fenix Law">
                     </div>
                     <div class="about__photo-accent"></div>
                 </div>
                 <div class="about__content fade-in">
-                    <span class="section__label">О практике</span>
-                    <h2 class="section__title">Почему мне доверяют</h2>
-                    <p class="about__text">
+                    <span class="section__label" data-i18n="about_label">О практике</span>
+                    <h2 class="section__title" data-i18n="about_title">Почему мне доверяют</h2>
+                    <p class="about__text" data-i18n="about_text">
                         Я — венчурный юрист. Работаю на стыке права, стартапов и инвестиций.
                         Понимаю не только документы, но и природу технологического бизнеса —
                         как устроен продукт, как принимаются решения, как работает привлечение капитала.
@@ -402,25 +406,25 @@
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Опыт работы с экосистемой инноваций и стартапами</span>
+                            <span data-i18n="about_point1">Опыт работы с экосистемой инноваций и стартапами</span>
                         </div>
                         <div class="about__point">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Практика в Астана Хаб, МФЦА и трансграничных структурах</span>
+                            <span data-i18n="about_point2">Практика в Астана Хаб, МФЦА и трансграничных структурах</span>
                         </div>
                         <div class="about__point">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Помогаю выстраивать юридическую структуру, готовую к росту и инвестициям</span>
+                            <span data-i18n="about_point3">Помогаю выстраивать юридическую структуру, готовую к росту и инвестициям</span>
                         </div>
                         <div class="about__point">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <span>Понимаю продукт, данные, команду и сделки — а не только бумаги</span>
+                            <span data-i18n="about_point4">Понимаю продукт, данные, команду и сделки — а не только бумаги</span>
                         </div>
                     </div>
                 </div>
@@ -430,18 +434,18 @@
             <div class="about__stats fade-in">
                 <div class="about__stat">
                     <div class="about__stat-num">100+</div>
-                    <div class="about__stat-label">стратегических сессий</div>
-                    <div class="about__stat-sub">СНГ · MENA · India · ЕС</div>
+                    <div class="about__stat-label" data-i18n="stat1_label">стратегических сессий</div>
+                    <div class="about__stat-sub" data-i18n="stat1_sub">СНГ · MENA · India · ЕС</div>
                 </div>
                 <div class="about__stat">
                     <div class="about__stat-num">30+</div>
-                    <div class="about__stat-label">проектных работ</div>
-                    <div class="about__stat-sub">структурирование · инкорп. · сделки</div>
+                    <div class="about__stat-label" data-i18n="stat2_label">проектных работ</div>
+                    <div class="about__stat-sub" data-i18n="stat2_sub">структурирование · инкорп. · сделки</div>
                 </div>
                 <div class="about__stat">
                     <div class="about__stat-num">5</div>
-                    <div class="about__stat-label">компаний на постоянном сопровождении</div>
-                    <div class="about__stat-sub">юридическая функция целиком</div>
+                    <div class="about__stat-label" data-i18n="stat3_label">компаний на постоянном сопровождении</div>
+                    <div class="about__stat-sub" data-i18n="stat3_sub">юридическая функция целиком</div>
                 </div>
             </div>
         </div>
@@ -451,33 +455,33 @@
     <section class="cases section section--dark" id="cases">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Типовые ситуации</span>
-                <h2 class="section__title">С чем ко мне приходят</h2>
+                <span class="section__label" data-i18n="cases_label">Типовые ситуации</span>
+                <h2 class="section__title" data-i18n="cases_title">С чем ко мне приходят</h2>
             </div>
             <div class="cases__grid">
                 <div class="cases__card fade-in">
                     <div class="cases__card-marker"></div>
-                    <p class="cases__card-text">Стартап перед инвестором, но права на продукт не оформлены — непонятно, кому что принадлежит</p>
+                    <p class="cases__card-text" data-i18n="case1">Стартап перед инвестором, но права на продукт не оформлены — непонятно, кому что принадлежит</p>
                 </div>
                 <div class="cases__card fade-in">
                     <div class="cases__card-marker"></div>
-                    <p class="cases__card-text">Два сооснователя делят 50/50, но нет ни соглашения, ни правил выхода, ни вестинга</p>
+                    <p class="cases__card-text" data-i18n="case2">Два сооснователя делят 50/50, но нет ни соглашения, ни правил выхода, ни вестинга</p>
                 </div>
                 <div class="cases__card fade-in">
                     <div class="cases__card-marker"></div>
-                    <p class="cases__card-text">Технологическая компания с сильным продуктом, но слабым контуром интеллектуальной собственности</p>
+                    <p class="cases__card-text" data-i18n="case3">Технологическая компания с сильным продуктом, но слабым контуром интеллектуальной собственности</p>
                 </div>
                 <div class="cases__card fade-in">
                     <div class="cases__card-marker"></div>
-                    <p class="cases__card-text">Запуск второго продукта внутри действующей компании — нужна новая структура и разделение активов</p>
+                    <p class="cases__card-text" data-i18n="case4">Запуск второго продукта внутри действующей компании — нужна новая структура и разделение активов</p>
                 </div>
                 <div class="cases__card fade-in">
                     <div class="cases__card-marker"></div>
-                    <p class="cases__card-text">Выход в Астана Хаб, МФЦА или ОАЭ — нужна юрисдикционная модель и понимание последствий</p>
+                    <p class="cases__card-text" data-i18n="case5">Выход в Астана Хаб, МФЦА или ОАЭ — нужна юрисдикционная модель и понимание последствий</p>
                 </div>
                 <div class="cases__card fade-in">
                     <div class="cases__card-marker"></div>
-                    <p class="cases__card-text">Платформа работает с данными пользователей, но нет политик, согласий и правовой рамки</p>
+                    <p class="cases__card-text" data-i18n="case6">Платформа работает с данными пользователей, но нет политик, согласий и правовой рамки</p>
                 </div>
             </div>
         </div>
@@ -487,8 +491,8 @@
     <section class="testimonials section" id="testimonials">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Отзывы</span>
-                <h2 class="section__title">Что говорят клиенты</h2>
+                <span class="section__label" data-i18n="test_label">Отзывы</span>
+                <h2 class="section__title" data-i18n="test_title">Что говорят клиенты</h2>
             </div>
             <div class="testimonials__grid testimonials__grid--two">
                 <div class="testimonials__card fade-in">
@@ -497,12 +501,12 @@
                             <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 8 8 7.2 12H14v12H0zm18 0V14.4C18 6.4 22.8 1.6 32 0l.8 3.2C27.2 4.8 25.6 8 25.2 12H32v12H18z" fill="currentColor" opacity="0.08"/>
                         </svg>
                     </div>
-                    <p class="testimonials__card-text">&laquo;У нас технологическая компания в сфере наружной рекламы, и мы планировали выйти на юрисдикцию Abu Dhabi Global Market. Нариман сделал нам детальный и качественный план выхода и помог с начальными шагами. Грамотный юридический советник.&raquo;</p>
+                    <p class="testimonials__card-text" data-i18n-html="test1_text">&laquo;У нас технологическая компания в сфере наружной рекламы, и мы планировали выйти на юрисдикцию Abu Dhabi Global Market. Нариман сделал нам детальный и качественный план выхода и помог с начальными шагами. Грамотный юридический советник.&raquo;</p>
                     <div class="testimonials__card-author">
                         <div class="testimonials__card-avatar"></div>
                         <div>
                             <div class="testimonials__card-name">Адильбек</div>
-                            <div class="testimonials__card-role">Основатель, WideLoop</div>
+                            <div class="testimonials__card-role" data-i18n="test1_role">Основатель, WideLoop</div>
                         </div>
                     </div>
                 </div>
@@ -512,12 +516,12 @@
                             <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 8 8 7.2 12H14v12H0zm18 0V14.4C18 6.4 22.8 1.6 32 0l.8 3.2C27.2 4.8 25.6 8 25.2 12H32v12H18z" fill="currentColor" opacity="0.08"/>
                         </svg>
                     </div>
-                    <p class="testimonials__card-text">&laquo;Я благодарна Нариману и компании Fenix Law за грамотную юридическую поддержку и помощь в выстраивании надежного внешнего контура, а именно политики конфиденциальности и условий использования. Для нас эти документы были критически важными, так как проект взаимодействует с чувствительными данными детей и подростков. Также Нариман помог нам грамотно оформить отношения с разработчиком.&raquo;</p>
+                    <p class="testimonials__card-text" data-i18n-html="test2_text">&laquo;Я благодарна Нариману и компании Fenix Law за грамотную юридическую поддержку и помощь в выстраивании надежного внешнего контура, а именно политики конфиденциальности и условий использования. Для нас эти документы были критически важными, так как проект взаимодействует с чувствительными данными детей и подростков. Также Нариман помог нам грамотно оформить отношения с разработчиком.&raquo;</p>
                     <div class="testimonials__card-author">
                         <div class="testimonials__card-avatar"></div>
                         <div>
                             <div class="testimonials__card-name">Томирис</div>
-                            <div class="testimonials__card-role">Основатель, проект &laquo;Анама&raquo;</div>
+                            <div class="testimonials__card-role" data-i18n-html="test2_role">Основатель, проект &laquo;Анама&raquo;</div>
                         </div>
                     </div>
                 </div>
@@ -527,7 +531,7 @@
                             <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 8 8 7.2 12H14v12H0zm18 0V14.4C18 6.4 22.8 1.6 32 0l.8 3.2C27.2 4.8 25.6 8 25.2 12H32v12H18z" fill="currentColor" opacity="0.08"/>
                         </svg>
                     </div>
-                    <p class="testimonials__card-text">Отметили, что разбор дал больше практической пользы, чем крупные конференции — от выбора между ИП и ТОО до разницы между Astana Hub и МФЦА, прозрачного Cap Table и защиты интересов фаундеров при работе с инвесторами.</p>
+                    <p class="testimonials__card-text" data-i18n="test3_text">Отметили, что разбор дал больше практической пользы, чем крупные конференции — от выбора между ИП и ТОО до разницы между Astana Hub и МФЦА, прозрачного Cap Table и защиты интересов фаундеров при работе с инвесторами.</p>
                     <div class="testimonials__card-author">
                         <div class="testimonials__card-avatar"></div>
                         <div>
@@ -542,7 +546,7 @@
                             <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 8 8 7.2 12H14v12H0zm18 0V14.4C18 6.4 22.8 1.6 32 0l.8 3.2C27.2 4.8 25.6 8 25.2 12H32v12H18z" fill="currentColor" opacity="0.08"/>
                         </svg>
                     </div>
-                    <p class="testimonials__card-text">Поблагодарили за подход — все вопросы изучаются заранее, а на сессии сразу даётся готовая структура решения, без воды и общих советов.</p>
+                    <p class="testimonials__card-text" data-i18n="test4_text">Поблагодарили за подход — все вопросы изучаются заранее, а на сессии сразу даётся готовая структура решения, без воды и общих советов.</p>
                     <div class="testimonials__card-author">
                         <div class="testimonials__card-avatar"></div>
                         <div>
@@ -559,96 +563,96 @@
     <section class="faq section section--light" id="faq">
         <div class="container">
             <div class="section__header fade-in">
-                <span class="section__label">Частые вопросы</span>
-                <h2 class="section__title">Вопросы и ответы</h2>
+                <span class="section__label" data-i18n="faq_label">Частые вопросы</span>
+                <h2 class="section__title" data-i18n="faq_title">Вопросы и ответы</h2>
             </div>
             <div class="faq__list">
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Что такое юридический аудит (комплексная юридическая проверка) и зачем он нужен моей компании?</span>
+                        <span data-i18n="faq1_q">Что такое юридический аудит (комплексная юридическая проверка) и зачем он нужен моей компании?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Это проверка того, насколько юридическая конструкция бизнеса — договоры, права на продукт, корпоративная структура, данные — соответствует его реальному состоянию. Бизнес часто растёт быстрее документов: продукт работает и клиенты платят, но договоры, политики и структура остались на уровне MVP. Аудит показывает, где накопились расхождения и что нужно закрыть до того, как риски ударят по деньгам или всплывут при проверке инвестора.</p>
+                        <p data-i18n="faq1_a">Это проверка того, насколько юридическая конструкция бизнеса — договоры, права на продукт, корпоративная структура, данные — соответствует его реальному состоянию. Бизнес часто растёт быстрее документов: продукт работает и клиенты платят, но договоры, политики и структура остались на уровне MVP. Аудит показывает, где накопились расхождения и что нужно закрыть до того, как риски ударят по деньгам или всплывут при проверке инвестора.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Как понять, что моей компании уже пора делать аудит?</span>
+                        <span data-i18n="faq2_q">Как понять, что моей компании уже пора делать аудит?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Несколько типичных сигналов: к вам скоро придёт инвестор или крупный клиент с due diligence; вы работаете с пользовательскими данными; разработчики и подрядчики оформлены на ГПХ без передачи прав на код; вы участник Astana Hub и пользуетесь льготами; либо бизнес давно изменился, а устав и договоры остались прежними. Если узнали себя хотя бы в одном — аудит окупается тем, что вы узнаёте проблему заранее, а не в момент сделки.</p>
+                        <p data-i18n="faq2_a">Несколько типичных сигналов: к вам скоро придёт инвестор или крупный клиент с due diligence; вы работаете с пользовательскими данными; разработчики и подрядчики оформлены на ГПХ без передачи прав на код; вы участник Astana Hub и пользуетесь льготами; либо бизнес давно изменился, а устав и договоры остались прежними. Если узнали себя хотя бы в одном — аудит окупается тем, что вы узнаёте проблему заранее, а не в момент сделки.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Что я получу по итогам аудита?</span>
+                        <span data-i18n="faq3_q">Что я получу по итогам аудита?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Сводный отчёт для руководства без воды, карту рисков (критичные / высокие / средние с объяснением каждого), конкретные правки по каждому документу — что написать, что убрать, что добавить — и дорожную карту на 30–60–90 дней. Не абстрактный список замечаний, а готовый план действий.</p>
+                        <p data-i18n="faq3_a">Сводный отчёт для руководства без воды, карту рисков (критичные / высокие / средние с объяснением каждого), конкретные правки по каждому документу — что написать, что убрать, что добавить — и дорожную карту на 30–60–90 дней. Не абстрактный список замечаний, а готовый план действий.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Чем экспресс-проверка отличается от расширенного аудита?</span>
+                        <span data-i18n="faq4_q">Чем экспресс-проверка отличается от расширенного аудита?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Экспресс-проверка (от 300 000 ₸) закрывает ограниченный круг вопросов — например, блок продукта: Terms, Privacy, согласия — и занимает до недели. Расширенный аудит — это все блоки: продукт, корпоративная структура, интеллектуальная собственность, команда, готовность к росту, плюс для участников Astana Hub отдельный модуль соответствия. Формат подбираем под вашу ситуацию.</p>
+                        <p data-i18n="faq4_a">Экспресс-проверка (от 300 000 ₸) закрывает ограниченный круг вопросов — например, блок продукта: Terms, Privacy, согласия — и занимает до недели. Расширенный аудит — это все блоки: продукт, корпоративная структура, интеллектуальная собственность, команда, готовность к росту, плюс для участников Astana Hub отдельный модуль соответствия. Формат подбираем под вашу ситуацию.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Зачем технологической компании открывать компанию в МФЦА?</span>
+                        <span data-i18n="faq5_q">Зачем технологической компании открывать компанию в МФЦА?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>МФЦА даёт юрисдикцию английского общего права — понятную для международных инвесторов корпоративную оболочку. Это нужно, когда вы готовитесь к раунду (под SAFE, акционерное соглашение, вход инвестора), когда хотите закрепить доли и вестинг между несколькими фаундерами, или когда нужно разделить владение, IP и операционную компанию при работе с зарубежными клиентами. Сопровождаю регистрацию Private Company под ключ.</p>
+                        <p data-i18n="faq5_a">МФЦА даёт юрисдикцию английского общего права — понятную для международных инвесторов корпоративную оболочку. Это нужно, когда вы готовитесь к раунду (под SAFE, акционерное соглашение, вход инвестора), когда хотите закрепить доли и вестинг между несколькими фаундерами, или когда нужно разделить владение, IP и операционную компанию при работе с зарубежными клиентами. Сопровождаю регистрацию Private Company под ключ.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Что даёт компании статус участника Astana Hub?</span>
+                        <span data-i18n="faq6_q">Что даёт компании статус участника Astana Hub?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Главное — налоговые льготы (по КПН, НДС и другим) и доступ к экосистеме. Но льготы зависят от того, как описана ваша деятельность в договорах, актах и бизнес-плане, и насколько она соответствует приоритетным видам деятельности. Разрыв между бумагой и реальной выручкой — прямой риск потери льгот. Поэтому я начинаю не с подачи заявки, а с разбора модели деятельности, и сопровождаю вход так, чтобы вы заходили с юридически выверенной структурой.</p>
+                        <p data-i18n="faq6_a">Главное — налоговые льготы (по КПН, НДС и другим) и доступ к экосистеме. Но льготы зависят от того, как описана ваша деятельность в договорах, актах и бизнес-плане, и насколько она соответствует приоритетным видам деятельности. Разрыв между бумагой и реальной выручкой — прямой риск потери льгот. Поэтому я начинаю не с подачи заявки, а с разбора модели деятельности, и сопровождаю вход так, чтобы вы заходили с юридически выверенной структурой.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Вы работаете только со стартапами?</span>
+                        <span data-i18n="faq7_q">Вы работаете только со стартапами?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Нет. Основной фокус — действующие технологические компании: платформы, маркетплейсы, финтех, SaaS, продукты на данных и ИИ. Им нужны аудит, структурирование сделок, юрисдикции, защита IP. Для стартапов на ранней стадии есть отдельный формат — стратегическая сессия, доступная по цене.</p>
+                        <p data-i18n="faq7_a">Нет. Основной фокус — действующие технологические компании: платформы, маркетплейсы, финтех, SaaS, продукты на данных и ИИ. Им нужны аудит, структурирование сделок, юрисдикции, защита IP. Для стартапов на ранней стадии есть отдельный формат — стратегическая сессия, доступная по цене.</p>
                     </div>
                 </div>
                 <div class="faq__item fade-in">
                     <button class="faq__question">
-                        <span>Как строится работа и с чего начать?</span>
+                        <span data-i18n="faq8_q">Как строится работа и с чего начать?</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq__answer">
-                        <p>Обычно с короткого разговора в Telegram, чтобы понять вашу ситуацию. Дальше — сбор документов, анализ, и на выходе конкретный результат: карта рисков и план. Работаю в формате «риск → решение → действие», без лекций. Чтобы начать — просто напишите в Telegram.</p>
+                        <p data-i18n="faq8_a">Обычно с короткого разговора в Telegram, чтобы понять вашу ситуацию. Дальше — сбор документов, анализ, и на выходе конкретный результат: карта рисков и план. Работаю в формате «риск → решение → действие», без лекций. Чтобы начать — просто напишите в Telegram.</p>
                     </div>
                 </div>
             </div>
@@ -660,20 +664,20 @@
         <div class="container">
             <div class="cta__inner fade-in">
                 <div class="cta__content">
-                    <h2 class="cta__title">Если вам нужен не общий совет, а трезвый разбор вашей ситуации</h2>
-                    <p class="cta__subtitle">Давайте обсудим ваш проект</p>
+                    <h2 class="cta__title" data-i18n="cta_title">Если вам нужен не общий совет, а трезвый разбор вашей ситуации</h2>
+                    <p class="cta__subtitle" data-i18n="cta_subtitle">Давайте обсудим ваш проект</p>
 
                     <form class="cta__form" id="contactForm">
                         <div class="cta__form-row">
-                            <input type="text" name="name" placeholder="Ваше имя" required class="cta__input">
-                            <input type="text" name="contact" placeholder="Телеграм, телефон или почта" required class="cta__input">
+                            <input type="text" name="name" data-i18n-placeholder="cta_placeholder_name" placeholder="Ваше имя" required class="cta__input">
+                            <input type="text" name="contact" data-i18n-placeholder="cta_placeholder_contact" placeholder="Телеграм, телефон или почта" required class="cta__input">
                         </div>
-                        <textarea name="message" placeholder="Коротко опишите ваш проект или ситуацию" rows="3" class="cta__textarea"></textarea>
-                        <button type="submit" class="btn btn--primary btn--large btn--full">Записаться на консультацию</button>
+                        <textarea name="message" data-i18n-placeholder="cta_placeholder_msg" placeholder="Коротко опишите ваш проект или ситуацию" rows="3" class="cta__textarea"></textarea>
+                        <button type="submit" class="btn btn--primary btn--large btn--full" data-i18n="cta_btn">Записаться на консультацию</button>
                     </form>
 
                     <div class="cta__divider">
-                        <span>или напишите напрямую</span>
+                        <span data-i18n="cta_divider">или напишите напрямую</span>
                     </div>
 
                     <div class="cta__socials">
@@ -681,7 +685,7 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M21.198 2.433a2.242 2.242 0 0 0-1.022.215l-16.5 7.5a2.25 2.25 0 0 0 .126 4.178l3.447 1.149 1.598 5.143a1.5 1.5 0 0 0 2.524.564l2.294-2.294 4.038 3.03a2.25 2.25 0 0 0 3.503-1.242l3.75-16.5a2.25 2.25 0 0 0-2.758-2.743z" fill="currentColor"/>
                             </svg>
-                            <span>Телеграм</span>
+                            <span data-i18n="cta_tg">Телеграм</span>
                         </a>
                         <a href="https://www.instagram.com/fenixlaw.legalstartup?igsh=MWZ6b3gwczRzMGJjdA%3D%3D&utm_source=qr" class="cta__social" target="_blank" rel="noopener">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -689,7 +693,7 @@
                                 <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
                                 <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
                             </svg>
-                            <span>Инстаграм</span>
+                            <span data-i18n="cta_ig">Инстаграм</span>
                         </a>
                     </div>
                 </div>
@@ -704,8 +708,8 @@
                 <img src="img/logo-light.png" alt="Fenix Law" class="footer__logo-img">
             </div>
             <div class="footer__text">
-                <p>&copy; 2025 Fenix Law. Бутиковая юридическая практика.</p>
-                <p>Юридическая архитектура для стартапов и технологических компаний.</p>
+                <p data-i18n="footer_p1">&copy; 2025 Fenix Law. Бутиковая юридическая практика.</p>
+                <p data-i18n="footer_p2">Юридическая архитектура для стартапов и технологических компаний.</p>
             </div>
         </div>
     </footer>
