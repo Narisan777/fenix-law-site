@@ -283,6 +283,49 @@ ul {
     transform: rotate(-45deg) translate(4px, -4px);
 }
 
+/* ==================== LANGUAGE TOGGLE ==================== */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    line-height: 1;
+}
+
+.lang-btn:hover {
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.lang-btn.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+@media (max-width: 768px) {
+    .lang-toggle {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
 /* ==================== HERO ==================== */
 .hero {
     min-height: 100vh;
