@@ -781,6 +781,28 @@ ul {
     z-index: -1;
 }
 
+.about__photo-caption {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.about__photo-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: 0.01em;
+}
+
+.about__photo-role {
+    font-size: 13px;
+    color: var(--color-accent-light);
+    letter-spacing: 0.04em;
+}
+
 .about__content .section__label {
     text-align: left;
 }
